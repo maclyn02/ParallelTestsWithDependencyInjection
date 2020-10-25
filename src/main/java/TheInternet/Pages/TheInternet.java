@@ -33,5 +33,4 @@ public class TheInternet extends BasePage{
         utils.waitForVisibility(linkHeader,20);
         return linkHeader.getText();
     }
-
 }

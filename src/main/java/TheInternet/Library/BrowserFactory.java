@@ -2,6 +2,7 @@ package TheInternet.Library;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BrowserFactory {
 
@@ -10,9 +11,11 @@ public class BrowserFactory {
     public void initBrowser(){
         try {
             System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver");
-            driver = new ChromeDriver();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+            driver = new ChromeDriver(chromeOptions);
             driver.get("https://the-internet.herokuapp.com/");
-            System.out.println("Started Chromedriver...");
+            System.out.println("Started Chromedriver in headless mode.....");
         }
         catch(Exception ex)
         {

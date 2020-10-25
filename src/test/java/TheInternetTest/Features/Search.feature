@@ -11,5 +11,10 @@
       |       Checkboxes      |
       |     Drag and Drop     |
       |      Context Menu     |
-      | Disappearing Elements |
       |      Broken Images    |
+      |   Dynamic Content     |
+      |     Floating Menu     |
+      |     Key Presses       |
+      |    Shifting Content   |
+      |     Status Codes      |
+      |    Slow Resources     |

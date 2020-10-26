@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="GoogleSearchParallel">
+<suite name="All Test Suite" data-provider-thread-count="20">
+    <test verbose="2" preserve-order="false" name="GoogleSearchParallel">
         <classes>
             <class name="TestRunner"/>
         </classes>
